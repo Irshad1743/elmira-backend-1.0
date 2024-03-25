@@ -8,7 +8,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
         secure: true,
         auth: {
             user: "elmira.contact@gmail.com",
-            pass: "dcilpjrgpjbuyrrq"
+            pass: process.env.MAIL
         }
     });
 
