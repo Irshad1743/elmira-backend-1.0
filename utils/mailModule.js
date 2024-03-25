@@ -15,7 +15,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
     const mailOptions = {
         from: from,
         to: to,
-        subject: `🍷🥂🥤 ${subject}`,
+        subject: `✅ ${subject}`,
         // text: "HI HELLO <h1> HELLO </h1>",
         html: `<body style="border-left: 10px solid #000e40; border-right: 2px solid #000e40; border-bottom: 2px solid #000e40; border-top: 2px solid #000e40; padding: 10px 10px 10px 20px;
         color: #222;
