@@ -7,7 +7,7 @@ exports.contactMail = async (req, res) => {
         const bodytext = `Name: ${name.toUpperCase()} <br>Contact No.: ${phone} <br>Email: ${email.toUpperCase()} <br>Message: ${message.toUpperCase()}`;
         // mail module function calling
         try {
-            await mailModule(email, "irshadalikadiwala@gmail.com", subject, bodytext, "Contact Us Form")
+            await mailModule(email, "elmira.contact@gmail.com", subject, bodytext, "Contact Us Form")
             res.status(201).json({ message: "Mail sent successfully." });
         } catch (err) {
             res.status(422).json({ error: "Something went wrong while sending mail, try after some time." });
@@ -24,7 +24,7 @@ exports.warrantyMail = async (req, res) => {
         const bodytext = `Name: ${name.toUpperCase()} <br>Contact No.: ${phone} <br>Email: ${email.toUpperCase()} <br>Order ID: ${orderid.toUpperCase()}`;
         // mail module function calling
         try {
-            await mailModule(email, "irshadalikadiwala@gmail.com", "Warranty Form Registration", bodytext, "Warranty Form")
+            await mailModule(email, "elmira.contact@gmail.com", "Warranty Form Registration", bodytext, "Warranty Form")
             res.status(201).json({ message: "Mail sent successfully." });
         } catch (err) {
             res.status(422).json({ error: "Something went wrong while sending mail, try after some time." });
