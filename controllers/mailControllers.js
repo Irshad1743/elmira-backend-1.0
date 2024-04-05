@@ -26,7 +26,7 @@ exports.warrantyMail = async (req, res) => {
         const subjectDet = `ELMIRA BAGS WARRANTY REGISTERED BY ${name.toUpperCase()}`
         // mail module function calling
         try {
-            await mailModule("elmira.contact@gmail.com", email, subjectDet, bodytext, "Warranty Form")
+            await mailModule(email, email, subjectDet, bodytext, "Warranty Form")
             res.status(201).json({ message: "Mail sent successfully." });
         } catch (err) {
             res.status(422).json({ error: "Something went wrong while sending mail, try after some time." });
