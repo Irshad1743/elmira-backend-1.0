@@ -7,7 +7,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
         port: 465,
         secure: true,
         auth: {
-            user: "elmira.contact@gmail.com",
+            user: "irshadalikadiwala@gmail.com",
             pass: process.env.MAIL
         }
     });
