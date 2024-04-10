@@ -4,9 +4,9 @@ const mailModule = (from, to, subject, bodytext, label) => {
     console.log("aaaaaaaaaaaaaaaaaa", from)
     const transport = nodemailer.createTransport({
         service: "gmail",
-        host: "smtp.gmail.com",
-        port: 587,
-        secure: false,
+        // host: "smtp.gmail.com",
+        // port: 587,
+        // secure: false,
         auth: {
             user: "irshadalikadiwala@gmail.com",
             pass: process.env.MAIL
