@@ -5,7 +5,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
     const transport = nodemailer.createTransport({
         service: "gmail",
         host: "smtp.gmail.com",
-        port: 465,
+        port: 587,
         secure: false,
         auth: {
             user: "irshadalikadiwala@gmail.com",
