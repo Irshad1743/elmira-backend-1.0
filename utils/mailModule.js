@@ -32,7 +32,14 @@ const mailModule = (from, to, subject, bodytext, label) => {
         // ]
     }
 
-    return transport.sendMail(mailOptions);
+    transporter.sendMail(mailOptions, function(error, info){
+      if (error) {
+        console.log('Error came = ', error);
+      } else {
+        console.log('Email sent = ', info.response);
+      }
+    });
+    return;
 }
 
 // from = "irshadalikadiwala@gmail.com"
