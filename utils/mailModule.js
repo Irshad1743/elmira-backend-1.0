@@ -13,7 +13,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
     });
 
     const mailOptions = {
-        from: `"irshad" <${from}>`,
+        from: `irshadali.1743@gmail.com`,
         to: to,
         subject: `✅ ${subject}`,
         // text: "HI HELLO <h1> HELLO </h1>",
