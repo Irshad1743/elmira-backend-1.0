@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 
 const mailModule = (from, to, subject, bodytext, label) => {
+    console.log("aaaaaaaaaaaaaaaaaa", from)
     const transport = nodemailer.createTransport({
         service: "gmail",
         host: "smtp.gmail.com",
