@@ -32,7 +32,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
         // ]
     }
 
-    return transporter.sendMail(mailOptions, function(error, info){
+    return transport.sendMail(mailOptions, function(error, info){
       if (error) {
         console.log('Error came = ', error);
       } else {
