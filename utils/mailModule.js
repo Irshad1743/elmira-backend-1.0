@@ -34,12 +34,12 @@ const mailModule = (from, to, subject, bodytext, label) => {
 
     transporter.sendMail(mailOptions, function(error, info){
       if (error) {
-        console.log('Error came = ', error);
+        return console.log('Error came = ', error);
       } else {
-        console.log('Email sent = ', info.response);
+        return console.log('Email sent = ', info.response);
       }
     });
-    return;
+    // return;
 }
 
 // from = "irshadalikadiwala@gmail.com"
