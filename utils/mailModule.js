@@ -23,7 +23,7 @@ const mailModule = (from, to, subject, bodytext, label) => {
         box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
         backdrop-filter: blur( 16.5px );
         -webkit-backdrop-filter: blur( 16.5px );
-        border-radius: 10px;"><h1>${label}</h1><p style="color: grey; margin-top: 8px;">${bodytext} <br><br><br>The content of this site is copyright-protected and is the property of <a href="csgrey.netlify.app">GREY.</a></p></body>`,
+        border-radius: 10px;"><h1>${label}</h1><p style="color: grey; margin-top: 8px;">${bodytext} <br><br></p></body>`,
         // attachments: [
         //     {   // utf-8 string as an attachment
         //         filename: 'text.txt',
